@@ -1,0 +1,95 @@
+header.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #cc672f;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#word1 {
+  stroke-dasharray: 1233px; /* 將線段變成虛線，先出現 1232.8px 的線，再空白 1232.8px，再出現線段，以此循環 */
+  stroke-dashoffset: 1233px; /* 將第一個空白起始位置往前移 1232.8px。此時因與起始點重和，所以起始點開始後的 1232.8px (整段線) 都會是空白 */
+  animation: page1Animation 0.6s ease-in forwards; /* 動畫名稱, 持續時間, 動畫效果, 動畫結束後的狀態, 延遲幾秒後開始動畫 */
+}
+
+/* 寫入特效 */
+@keyframes page1Animation {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+#word2 {
+  stroke-dasharray: 1529px;
+  stroke-dashoffset: 1529px;
+  animation: page1Animation 0.3s ease-in forwards 0.3s;
+}
+#word3 {
+  stroke-dasharray: 983px;
+  stroke-dashoffset: 983px;
+  animation: page1Animation 0.3s ease-in forwards 0.6s;
+}
+#word4 {
+  stroke-dasharray: 1472px;
+  stroke-dashoffset: 1472px;
+  animation: page1Animation 0.3s ease-in forwards 0.9s;
+}
+#word5 {
+  stroke-dasharray: 993px;
+  stroke-dashoffset: 993px;
+  animation: page1Animation 0.3s ease-in forwards 1.2s;
+}
+#word6 {
+  stroke-dasharray: 1472px;
+  stroke-dashoffset: 1472px;
+  animation: page1Animation 0.3s ease-in forwards;
+}
+#word7 {
+  stroke-dasharray: 1115px;
+  stroke-dashoffset: 1115px;
+  animation: page1Animation 0.3s ease-in forwards 0.2s;
+}
+#word8 {
+  stroke-dasharray: 1102px;
+  stroke-dashoffset: 1102px;
+  animation: page1Animation 0.3s ease-in forwards 0.4s;
+}
+#word9 {
+  stroke-dasharray: 1344px;
+  stroke-dashoffset: 1344px;
+  animation: page1Animation 0.3s ease-in forwards 0.6s;
+}
+#word10 {
+  stroke-dasharray: 568px;
+  stroke-dashoffset: 568px;
+  animation: page1Animation 0.3s ease-in forwards 0.8s;
+}
+#word11 {
+  stroke-dasharray: 1226px;
+  stroke-dashoffset: 1226px;
+  animation: page1Animation 0.3s ease-in forwards 1s;
+}
+#word12 {
+  stroke-dasharray: 1163px;
+  stroke-dashoffset: 1163px;
+  animation: page1Animation 0.3s ease-in forwards 1.2s;
+}
+
+/* 顏色填滿特效 */
+@keyframes fillColor {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+svg {
+  animation: fillColor 1s ease forwards 1s;
+}

@@ -1,0 +1,637 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main section.page1 nav,
+main section.page2 nav,
+main section.page3 nav {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main section.page1 nav ul,
+main section.page2 nav ul,
+main section.page3 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 1rem 2rem;
+}
+
+main section.page1 nav ul li,
+main section.page2 nav ul li,
+main section.page3 nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+main section.page1 nav ul li a,
+main section.page2 nav ul li a,
+main section.page3 nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+}
+
+main section.page1 nav ul li a.active,
+main section.page2 nav ul li a.active,
+main section.page3 nav ul li a.active {
+  color: #ff8a00;
+}
+
+main section.page1 nav ul li a:hover,
+main section.page2 nav ul li a:hover,
+main section.page3 nav ul li a:hover {
+  color: #ff8a00;
+}
+
+main section.page1 {
+  background-image: url("../ICONS/OrangeBackground.svg"), url("../ICONS/half-circle.svg");
+  background-size: 40% 150%, 10%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 120% 50%, 0% 75%;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.page1 div.myDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 4rem;
+}
+
+main section.page1 div.myDesc div.aboutMe {
+  -webkit-box-flex: 7;
+      -ms-flex: 7 1 700px;
+          flex: 7 1 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main section.page1 div.myDesc div.aboutMe h2 {
+  padding: 1rem 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ff7b01;
+}
+
+main section.page1 div.myDesc div.aboutMe div p {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+main section.page1 div.myDesc div.aboutMe div.myLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0rem 1rem;
+}
+
+main section.page1 div.myDesc div.aboutMe div.myLink a img {
+  width: 80%;
+  padding: 1rem;
+}
+
+main section.page1 div.myDesc div.myPic {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 300px;
+          flex: 3 1 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+main section.page1 div.myDesc div.myPic span {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+main section.page1 div.myDesc div.myPic span img {
+  position: relative;
+  left: -5%;
+  top: 5%;
+  width: 110%;
+  height: 80%;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+main section.page1 div.myDesc div.myPic h3 {
+  width: 80%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  background-color: #03fff0;
+  z-index: 2;
+}
+
+main section.page1 div.myDesc div.myPic div {
+  width: 80%;
+  height: 2.9rem;
+  background-color: #07b4a9;
+  position: relative;
+  top: -3%;
+  left: 2.5%;
+}
+
+main section.page2 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.page2 div.myDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0rem 0rem 0rem 4rem;
+}
+
+main section.page2 div.myDesc div.aboutMe {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3.5;
+      -ms-flex: 3.5;
+          flex: 3.5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 1rem;
+}
+
+main section.page2 div.myDesc div.aboutMe table {
+  padding: 0rem 0rem 0rem 2rem;
+  width: 90%;
+  font-size: 1.4rem;
+  border-collapse: collapse;
+}
+
+main section.page2 div.myDesc div.aboutMe table tr {
+  border-bottom: 2px solid #a9a9a9;
+}
+
+main section.page2 div.myDesc div.aboutMe table tr th {
+  min-width: 6rem;
+}
+
+main section.page2 div.myDesc div.aboutMe table tr td {
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+
+main section.page2 div.myDesc div.aboutMe table tr td img {
+  width: 4vw;
+  padding: 0rem 0.3rem;
+}
+
+main section.page2 div.myDesc div.aboutMe div.myLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0rem 1rem;
+}
+
+main section.page2 div.myDesc div.aboutMe div.myLink a img {
+  width: 80%;
+  padding: 1rem;
+}
+
+main section.page2 div.myDesc div.myPic {
+  margin: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 10vw;
+  height: 30vw;
+  background-color: rgba(255, 122, 0, 0.84);
+}
+
+main section.page2 div.myDesc div.myPic img {
+  width: 20vw;
+  height: 100%;
+  position: relative;
+  top: -1vw;
+  left: -7%;
+}
+
+main section.page3 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.page3 div.contact {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.page3 div.contact form {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+main section.page3 div.contact form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.page3 div.contact form div label {
+  font-size: 1.5rem;
+  width: 25%;
+  text-align: center;
+}
+
+main section.page3 div.contact form div input {
+  font-size: 1.25rem;
+  padding: 1rem 0.5rem;
+  height: 1.5rem;
+  width: 70%;
+  background-color: rgba(255, 122, 0, 0.59);
+}
+
+main section.page3 div.contact form div input:focus {
+  background-color: white;
+}
+
+main section.page3 div.contact form div textarea {
+  width: 70%;
+  min-height: 20vh;
+  background-color: rgba(255, 122, 0, 0.59);
+  font-size: 1.4rem;
+}
+
+main section.page3 div.contact form div textarea:focus {
+  background-color: white;
+}
+
+main section.page3 div.contact form button {
+  background-color: rgba(255, 122, 0, 0.59);
+  font-size: 1.3rem;
+  min-width: 220px;
+  max-width: 25%;
+  padding: 1rem 2rem;
+  position: relative;
+  left: 30%;
+}
+
+main section.page3 div.contact form button:hover {
+  background-color: rgba(255, 122, 0, 0.9);
+}
+
+main section.page3 div.contact div.info {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 2px solid #a9a9a9;
+}
+
+main section.page3 div.contact div.info div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #a9a9a9;
+}
+
+main section.page3 div.contact div.info div h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+main section.page3 div.contact div.info div p {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+main section.page3 div.contact div.info div div.p3MyLink {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.page3 div.contact div.info div div.p3MyLink a {
+  margin: 1rem;
+}
+
+main section.page3 div.contact div.info div div.p3MyLink a img {
+  width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.page1 nav,
+  main section.page2 nav,
+  main section.page3 nav {
+    -webkit-box-shadow: inset 0 0 10px #a8a8a8;
+            box-shadow: inset 0 0 10px #a8a8a8;
+  }
+  main section.page1 nav ul,
+  main section.page2 nav ul,
+  main section.page3 nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0rem;
+  }
+  main section.page1 nav ul li,
+  main section.page2 nav ul li,
+  main section.page3 nav ul li {
+    padding: 0.5rem;
+  }
+  main section.page1 nav ul li a,
+  main section.page2 nav ul li a,
+  main section.page3 nav ul li a {
+    font-size: 1.5rem;
+  }
+  main section.page1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-image: none;
+  }
+  main section.page1 div.myDesc {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0rem;
+  }
+  main section.page1 div.myDesc div.aboutMe h2 {
+    text-align: center;
+  }
+  main section.page1 div.myDesc div.aboutMe div p {
+    text-indent: 2rem;
+    line-height: 150%;
+  }
+  main section.page1 div.myDesc div.aboutMe div.myLink {
+    display: none;
+  }
+  main section.page1 div.myDesc div.myPic span {
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.page1 div.myDesc div.myPic div {
+    top: -6%;
+  }
+  main section.page2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0rem;
+  }
+  main section.page2 div.myDesc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0rem;
+  }
+  main section.page2 div.myDesc div.aboutMe {
+    padding: 1rem;
+  }
+  main section.page2 div.myDesc div.aboutMe table {
+    width: 100%;
+    font-size: 1.3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
+  main section.page2 div.myDesc div.aboutMe table td {
+    padding: 0rem;
+  }
+  main section.page2 div.myDesc div.aboutMe div.myLink {
+    display: none;
+  }
+  main section.page2 div.myDesc div.myPic {
+    background-color: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section.page2 div.myDesc div.myPic img {
+    width: 40vw;
+  }
+  main section.page3 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main section.page3 div.contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  main section.page3 div.contact form {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.page3 div.contact form div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0rem;
+  }
+  main section.page3 div.contact form div label {
+    text-align: left;
+  }
+  main section.page3 div.contact form div input {
+    width: 100%;
+  }
+  main section.page3 div.contact form div textarea {
+    width: 100%;
+  }
+  main section.page3 div.contact form button {
+    max-width: none;
+    width: 100%;
+    position: initial;
+  }
+  main section.page3 div.contact div.info {
+    width: 100%;
+    border-top: 2px solid #a9a9a9;
+  }
+  main section.page3 div.contact div.info div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main section.page3 div.contact div.info div h2 {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    font-size: 1.2rem;
+  }
+  main section.page3 div.contact div.info div p {
+    -webkit-box-flex: 8;
+        -ms-flex: 8;
+            flex: 8;
+    font-size: 1.2rem;
+  }
+  main section.page3 div.contact div.info div div.p3MyLink {
+    -webkit-box-flex: 8;
+        -ms-flex: 8;
+            flex: 8;
+  }
+  main section.page3 div.contact div.info div div.p3MyLink a {
+    width: 15%;
+    margin: 0.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
